@@ -1,16 +1,9 @@
+import { useState } from "react"
 import Review from "./Review"
 
 
 export const Reviews = () => {
-    // return
-    // <>
-    // { posts.length > 0 && posts.map(( post ) => {
-    //     return <p key={post.id}></p>
-    
-    // }) : <p>No Posts to Display</p>}
-    // </>
-    
-    const posts =  [
+   const [reviews, setReviews] = useState ([
 		{
 			"body": "Stacy gave me the best hair cut of my life!  She is amazing.",
 			"id": "3",
@@ -35,7 +28,9 @@ export const Reviews = () => {
 			"timestamp": "2024-01-03T00:54:50.843257",
 			"user_id": "1"
 		}
-	]
+	])
+    
+     
 
 //   return (
 //     <>
@@ -50,20 +45,41 @@ export const Reviews = () => {
 //       }) : <p>No Posts to Display</p>}
 //      </>
   
-  return (
-    <>
-      
-      { posts.length > 0 ? reviews.map(( review ) => {
-            return <Post key={review.id}review={review} />
-        
-      }) : <p> No Posts to Display</p>}
-      
-      
-    </>
-  )
-}  
+return (
+    <div>
+      {reviews.length > 0 ? (
+        reviews.map((review) => (
+          <div key={review.id}>
+            <Review review={review} />
+            <div>
+              <button onClick={() => handleRemoveReview(review.id)}>
+                Remove Review
+              </button>
+            </div>
+          </div>
+        ))
+      ) : (
+        <p>No Reviews to Display</p>
+      )}
+    </div>
+  );
+}
 
 // {/* <b>{post.author} </b><br /> */}
 // {post.body}
 // </p>
   
+
+
+// return (
+//     <>
+//       <div>
+//       { reviews.length > 0 ? reviews.map(( review ) => {
+//             return <Review key={review.id}review={review} />
+//         //add button, function that occurs on click
+//       }) : <p> No Reviews to Display</p>}
+      
+//       </div>
+//     </>
+//   )
+// }  
