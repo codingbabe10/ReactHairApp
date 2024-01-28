@@ -1,0 +1,24 @@
+.prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  .header-container {
+    position: relative;
+  }
+  
+  .prata-regular {
+    position: top left;
+    top:0;
+    left: 0;
+    margin: 10px; /* Optional: Add some margin for spacing */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the navbar */
+    align-items: center; /* Vertically center the navbar */
+  }
+  

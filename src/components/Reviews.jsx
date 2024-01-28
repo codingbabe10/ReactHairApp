@@ -32,18 +32,7 @@ export const Reviews = () => {
     
      
 
-//   return (
-//     <>
-//     <container fluid data-bs-theme='dark'className= 'app' >
-//       <h1>Padawans Portal</h1>
-      
-//       { posts.length > 0 && posts.map(( post ) => {
-//         return <p key={post.id}>
-//           {/* <b>{post.author} </b><br /> */}
-//           {post.body}
-//         </p>
-//       }) : <p>No Posts to Display</p>}
-//      </>
+
   
 return (
     <div>
@@ -65,21 +54,3 @@ return (
   );
 }
 
-// {/* <b>{post.author} </b><br /> */}
-// {post.body}
-// </p>
-  
-
-
-// return (
-//     <>
-//       <div>
-//       { reviews.length > 0 ? reviews.map(( review ) => {
-//             return <Review key={review.id}review={review} />
-//         //add button, function that occurs on click
-//       }) : <p> No Reviews to Display</p>}
-      
-//       </div>
-//     </>
-//   )
-// }  
