@@ -5,13 +5,13 @@ export default function Sidebar() {
   return (
     <Navbar sticky='top' className='flex-column sidebar'>
         <Nav.Item>
-            <Nav.Link href='/'>Feed</Nav.Link>
+            <Nav.Link href='/'></Nav.Link>
         </Nav.Item>
         <Nav.Item>
-            <Nav.Link href='/'>My Page</Nav.Link>
+            <Nav.Link href='/'></Nav.Link>
         </Nav.Item>
         <Nav.Item>
-            <Nav.Link href='/'>Padawans Playground</Nav.Link>
+            <Nav.Link href='/'></Nav.Link>
         </Nav.Item>
     </Navbar>
   )

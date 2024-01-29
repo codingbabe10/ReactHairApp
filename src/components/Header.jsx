@@ -12,10 +12,13 @@ export default function Header() {
         <Navbar.Brand href="/">
         <h1 className="prata-regular" style={{ color: "black" }}>Good Hair Day</h1>
     </Navbar.Brand>
-          <Nav.Link href='/register'>HOW IT WORKS</Nav.Link>
-          <Link to='/login'>LOGIN</Link>
-          <Nav.Link href='/users'>ONE TIME SERVICE</Nav.Link>
-          <Nav.Link href='/posts'>CONTACT</Nav.Link>
-        </Container>
-      </Navbar>
-    )}
+    <Nav className="mr-auto">
+                    <Nav.Link href='/register' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black' }}>HOW IT WORKS</Nav.Link>
+                    <Link to='/login' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black' }}>LOGIN</Link>
+                    <Nav.Link href='/users' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black' }}>ONE TIME SERVICE</Nav.Link>
+                    <Nav.Link href='/posts' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black' }}>CONTACT</Nav.Link>
+                </Nav>
+            </Container>
+        </Navbar>
+    );
+}

@@ -1,20 +1,28 @@
 .app{
     background-color: rgb(253, 253, 253);
-    color: white;
-    min-height: 900px ;
-    padding: 0;
+    color: black;
+    min-height: 1000px ;
+    padding: 100;
   }
   
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   
-  /* @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
+  
+  
+  
   
   .custom-navbar .brand-text {
-    font-family: 'Roboto', sans-serif; /* Apply the chosen font */
-    font-weight: bold; /* Optional: Adjust font weight */
-  }
+   
+    font-family: 'Cormorant Garamond', serif; 
+    font-weight: bold;
+   
+}
+
+
+
+.nav-links-container {
+  text-align: center;
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
   
   
   .header {
@@ -55,4 +63,39 @@
     background-color: white;
     color: black;
   }
+  
+
+
+  .custom-navbar {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  .nav-links-container {
+    text-align: center;
+    margin-top: 0px; /* Adjust the top margin as needed */
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .brand {
+    margin-left: 100; /* Push "Good Hair Day" to the very left */
+    padding-right: 15px; /* Add some padding between "Good Hair Day" and the rest of the content */
+}
+
+  
+  @media (min-width: 768px) {
+    .nav-links-container {
+        margin-top: 0; /* Reset the top margin */
+    }
+  
+    .nav-links {
+        flex-direction: row;
+    }
+  }
+  
   
