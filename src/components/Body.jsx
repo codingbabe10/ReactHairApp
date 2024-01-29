@@ -17,7 +17,7 @@ export default function Body({ sidebar, children }) {
                     />
                     {/* Text */}
         <div>
-            <p>Best in class hair-care. Nice salon, nice price, and more perks.</p>
+            <p>Click here to choose your package</p>
             <p style={{ color: 'white' }}>Best in class hair-care...</p>
         </div>
 
