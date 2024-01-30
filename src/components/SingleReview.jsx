@@ -1,4 +1,4 @@
-export default function Review ({review}) {
+export default function SingleReview ({review}) {
 
     return(
         <p>

@@ -1,9 +1,13 @@
 import { useState } from "react"
 
-export default function Register() {
 
+
+export default function Register() {
+    const history=useHistory();
     
     const [user, setUser] = useState({ username: '', email: '', password: '' })
+   
+       
    
     async function registerUser(){
         const res = await fetch('http://127.0.0.1:5000/user',{
@@ -24,52 +28,48 @@ export default function Register() {
         setUser({username:'',email:'',password:''})
     }
 
-    return (
-        <>
-            <h3>Register</h3>
-            <form action="" onSubmit={handleSubmit}>
-                <label htmlFor="username">Username</label><br />
-                <input type="text" name='username' value={user.username} onChange={(e) => setUser({ ...user, username: e.target.value })}  required/><br />
-                <label htmlFor="email">Email</label><br />
-                <input type="email" name='email' value={user.email} onChange={(e)=> setUser({...user, email: e.target.value})} required/><br />
-                <label htmlFor="password">Password</label><br />
-                <input type="password" name='password' value={user.password} onChange={(e)=> setUser({...user, password: e.target.value})} required/><br />
-                <input type="Submit" value={'Register'}/>
-            </form>
-        </>
-    )
-    return (
-        <div>
-            <h1>Pick Your Package and Register</h1>
-    
-            <h2>Packages</h2>
-            <div className="package-container">
-                {/* Repeat this container for each package */}
-                <div className="package">
-                    {/* Package content */}
-                </div>
-            </div>
-    
-            {/* Registration form */}
-            <h3>Register</h3>
-            <form action="" onSubmit={handleSubmit}>
-                <label htmlFor="username">Username</label><br />
-                <input type="text" name='username' value={user.username} onChange={(e) => setUser({ ...user, username: e.target.value })} required/><br />
-                <label htmlFor="email">Email</label><br />
-                <input type="email" name='email' value={user.email} onChange={(e)=> setUser({...user, email: e.target.value})} required/><br />
-                <label htmlFor="password">Password</label><br />
-                <input type="password" name='password' value={user.password} onChange={(e)=> setUser({...user, password: e.target.value})} required/><br />
-                <input type="Submit" value={'Register'}/>
-            </form>
-        </div>
-    );
+
+    const handleHistory = () => {
+        history.push("/PlanSelection");
     }
 
-
-
-
-
-
-
-
-
+    return (
+        <>
+            <h3>Create Account</h3>
+      <form action="" onSubmit={handleSubmit}>
+        <label htmlFor="username">New Username</label>
+        <br />
+        <input
+          type="text"
+          name="new username"
+          value={user.username}
+          onChange={(e) => setUser({ ...user, username: e.target.value })}
+          required
+        />
+        <br />
+        <label htmlFor="email">Email</label>
+        <br />
+        <input
+          type="email"
+          name="email"
+          value={user.email}
+          onChange={(e) => setUser({ ...user, email: e.target.value })}
+          required
+        />
+        <br />
+        <label htmlFor="create password">Create Password</label>
+        <br />
+        <input
+          type="password"
+          name="create password"
+          value={user.password}
+          onChange={(e) => setUser({ ...user, password: e.target.value })}
+          required
+        />
+        <br />
+        {/* Button to register and navigate to PlanSelection */}
+        <button type="submit">Register</button>
+      </form>
+    </>
+    );
+}

@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container'
 
 import { Reviews } from "./components/Reviews"
+import Review from './components/forms/Review'
 import Header from './components/Header'
 import Body from './components/Body'
 import Whiteboard from './components/Whiteboard'

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Review from "./Review"
+import Review from "./SingleReview"
 
 
 export const Reviews = () => {

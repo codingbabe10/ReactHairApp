@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function OneTimeService() {
+export default function onetimeservice() {
     return (
         <div>
             <h1>One-Time Services</h1>
