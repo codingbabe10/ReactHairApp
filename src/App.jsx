@@ -12,8 +12,7 @@ import SocialPage from './pages/SocialPage'
 import LandingPage from './pages/LandingPage'
 import Login from './components/forms/Login'
 import { Route, Routes } from 'react-router-dom'
-
-
+import PlanSelection from './components/PlanSelection'
 
 export default function App() {
 
@@ -25,8 +24,9 @@ export default function App() {
         <Route path='/' element={<LandingPage />} />
         <Route path='/login' element={<FormPage><Login /></FormPage>} />
         <Route path='/register' element={<formPage><Register/></formPage>} />
-        <Route path='/register' element={<socialPage><Users/></socialPage>} />
-        <Route path='/register' element={<socialPage><Reviews/></socialPage>} />
+        <Route path='/users' element={<socialPage><Users/></socialPage>} />
+        <Route path='/reviews' element={<socialPage><Reviews/></socialPage>} />
+        <Route path='/planselection' element={<SocialPage><PlanSelection/></SocialPage>} />
       </Routes>
 
     </Container>

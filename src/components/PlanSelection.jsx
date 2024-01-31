@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './PlanSelection.css'; 
 
 const PlanSelection= () => {
-  const history = useHistory();
+  
   const [selectedPackage, setSelectedPackage] = useState(null);
 
   const handlePackageSelection = (packageInfo) => {
