@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 
+import "./Home.css"
 
 export default function () {
   // const [performingStudent, setPerformingStudent] = useState('');
