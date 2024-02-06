@@ -1,47 +1,59 @@
-import { useState } from "react"
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
-    const [user, setUser] = useState({username: '', password: ''})
-    const [ isLogging, setIsLogging ] = useState(false)
+    const [user, setUser] = useState({ username: '', password: '' });
+    const [isLogging, setIsLogging] = useState(false);
+    const navigate = useNavigate();
 
-    if( isLogging ){
-        loginUser()
-    }
-
-    async function loginUser(){
-        const res = await fetch('http://127.0.0.1:5000/login',{
-            method : "POST",
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(user)
-        })
-        if (res.ok){
-            const data = await res.json()
-            console.log(data);
+    useEffect(() => {
+        if (isLogging) {
+            loginUser();
         }
-        setIsLogging(false)
+    }, [isLogging]);
+
+    async function loginUser() {
+        try {
+            const res = await fetch('http://127.0.0.1:5000/login', {
+                method: "POST",
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(user)
+            });
+            if (res.ok) {
+                const data = await res.json();
+                console.log(data);
+
+                // Navigate to home page after successful login
+                navigate('/');
+            } else {
+                // Handle login error
+            }
+        } catch (error) {
+            // Handle fetch error
+        } finally {
+            setIsLogging(false);
+        }
     }
 
-    function handleSubmit(e){
-        e.preventDefault()
-        const loginElement = e.currentTarget
-        const loginForm = new FormData(loginElement)
-        console.log(loginForm.get('username'));
-        setUser(
-            Object.fromEntries(loginForm)
-        )
-        setIsLogging(true)
+    function handleSubmit(e) {
+        e.preventDefault();
+        const loginElement = e.currentTarget;
+        const loginForm = new FormData(loginElement);
+        const formData = Object.fromEntries(loginForm);
+        setUser(formData);
+        setIsLogging(true);
     }
 
     return (
         <>
             <h3>Login</h3>
             <form action="" id='login-form' onSubmit={handleSubmit}>
-                <label htmlFor="username"></label><br />
-                <input type="text" name='username'/><br />
-                <label htmlFor="password"></label><br />
-                <input type="password" name={'password'} /><br />
-                <input type="submit" value={'Login'} />
+                <label htmlFor="username">Username:</label><br />
+                <input type="text" name='username' value={user.username} onChange={(e) => setUser({ ...user, username: e.target.value })} /><br />
+                <label htmlFor="password">Password:</label><br />
+                <input type="password" name='password' value={user.password} onChange={(e) => setUser({ ...user, password: e.target.value })} /><br />
+                <input type="submit" value='Login' />
             </form>
         </>
-    )
+    );
 }

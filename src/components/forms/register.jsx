@@ -1,27 +1,36 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom";
 
-export default function Register() {
+export default function register() {
 
     
     const [user, setUser] = useState({ username: '', email: '', password: '' })
-   
+    const navigate = useNavigate();
+
+    console.log (user)
+
     async function registerUser(){
-        const res = await fetch('http://127.0.0.1:5000/user',{
+        const res = await fetch('http://127.0.0.1:5000/register',{
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(user)
         })
         if(res.ok){
             const data = await res.json()
-            console.log(data);
-        }
+            console.log(data,"==========");
+            navigate('/login', {replace: true});
+         }
+        //  return redirect("/login")
+       
     }
 
     function handleSubmit(e){
         e.preventDefault()
         registerUser()
         console.log(user, 'form submitted');
-        setUser({username:'',email:'',password:''})
+        
+        setUser({username:'',email:'',password:''});
+        
     }
 
     return (

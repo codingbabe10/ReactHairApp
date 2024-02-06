@@ -13,7 +13,7 @@ export default function Header() {
         <h1 className="prata-regular" style={{ color: "black" }}>Good Hair Day</h1>
     </Navbar.Brand>
     <Nav className="mr-auto">
-                    <Nav.Link href='/users' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black' }}>HOW IT WORKS</Nav.Link>
+                    <Nav.Link href='/Packages' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black' }}>HOW IT WORKS</Nav.Link>
                     <Link to='/login' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black' }}>LOGIN</Link>
                     <Nav.Link href='/register' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black' }}>SIGN UP</Nav.Link>
                     <Nav.Link href='/posts' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black' }}>CONTACT</Nav.Link>
