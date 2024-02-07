@@ -1,10 +1,22 @@
 .card {
-  background-color: black;
+  
+  /* background-color: black;
   color: white;
   border-radius: 10px;
   text-align: center;
   padding: 20px;
-  transition: transform 0.2s ease; /* Adding transition for smooth hover effect */
+  transition: transform 0.2s ease;  */
+
+  background-color: white;
+  color: rgb(204, 219, 220);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid gray; /* Add border */
+
+
+
 }
 
 
@@ -18,22 +30,30 @@
   width: 100px; /* Adjust as needed */
   height: 100px; /* Adjust as needed */
   background-image: url('path/to/glitter-texture.png'); /* Replace 'path/to/glitter-texture.png' with the actual path to your glitter texture image */
-  background-color: rgba(255, 192, 203, 0.5); /* Pink color with alpha (opacity) */
+  background-color: white (255, 192, 203, 0.5); /* Pink color with alpha (opacity) */
   border-radius: 50%;
   opacity: 0;
   transition: opacity 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Move the card slightly up on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
-  opacity: 1;
+  /* transform: translateY(-5px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  opacity: 1; */
+
+  
+    background-color: gray;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+    border: 1px solid gray;
+
+
 }
 
 
 .card:hover {
   transform: translateY(-5px); /* Move the card slightly up on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+  box-shadow: 0 4px 8px rgba(142, 171, 206, 0); /* Add shadow effect on hover */
 }
 
 
@@ -59,12 +79,12 @@
 
 
 .btn-pink:hover {
-  background-color: #f3c0e1; /* Lighter shade of blush on hover */
+  background-color: lightgray; /* Lighter shade of blush on hover */
 }
 
 .btn-pink:active {
-  box-shadow: 0 0 10px #f3c3db; /* Pink shadow when button is clicked */
-  border-color: #f2a7d9; /* Change border color when button is clicked */
+  box-shadow: 0 0 10px lightgray; /* Pink shadow when button is clicked */
+  border-color: black; /* Change border color when button is clicked */
 }
 
 .package-item {
@@ -80,7 +100,7 @@
 }
 
 .package-item:hover {
-  background-color: #f5a4dd; /* Lighter shade of blush on hover */
+  background-color: lightgray; /* Lighter shade of blush on hover */
 }
 
 .package-item .card-title {
