@@ -11,7 +11,7 @@ export default function Body({ sidebar, children }) {
                  <Container>
                      
         <div>
-            <p>Click here to choose your package</p>
+            <p></p>
             <p style={{ color: 'white' }}>Best in class hair-care...</p>
         </div>
 

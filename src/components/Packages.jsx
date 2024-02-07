@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 import './Packages.css'
@@ -167,7 +168,8 @@ export default function Packages() {
                        </div>
                   </div>
                   <div>
-                  <h1>Step 2: Click here to <button className="subscribe-button">Subscribe</button></h1>
+                  <h1>Step 2: Click here to <Link to="/payments"><button className="subscribe-button">Subscribe</button></Link></h1>
+
                   <h1>Step 3: Click here to <button className="create-account">Create Account</button></h1>
                   <h1>Step 4: Click here to <button className="Login">Login</button> and schedule your hair appointment</h1>
       <h5></h5>

@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
+// import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
     const [user, setUser] = useState({ username: '', password: '' });
     const [isLogging, setIsLogging] = useState(false);
     const navigate = useNavigate();
+    const secondHomeRoute = '/secondHome'; 
 
     useEffect(() => {
         if (isLogging) {
@@ -24,7 +26,7 @@ export default function Login() {
                 console.log(data);
 
                 // Navigate to home page after successful login
-                navigate('/');
+                navigate('/secondHome');
             } else {
                 // Handle login error
             }

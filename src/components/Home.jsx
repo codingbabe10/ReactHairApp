@@ -29,7 +29,7 @@ export default function () {
                          alt="Hair Care Image" 
                      />
       <h3></h3>
-      <p>Good Hair Day is a subscription service that offers members hair services each month for a fixed, predictable, price and offers a host of other benefits.  Good Hair Day aims for its members to have a first class haircare experience each month, and we are honored to be trusted with scheduling you with vetted, talented, and experienced stylists.</p>
+      <p>Good Hair Day is a Global subscription service that offers members all over the world hair services at an excellent hair salon of their choice each month for a fixed, predictable, price and offers a host of other benefits.  Good Hair Day aims for its members to have a first class haircare experience each month, and we are honored to be trusted with scheduling you with vetted, talented, and experienced stylists.</p>
       <h3>Best in class hair care</h3>
     </Container>
   );

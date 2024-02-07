@@ -39,14 +39,20 @@ function ColorSchemesExample() {
       <Navbar bg="light" data-bs-theme="light">
         <Container>
         <Navbar.Brand href="/">
-        <h1 className='gotham-bold' style={{ color: "black" }}>Good Hair Day</h1>
+        <h1 className='gotham-bold' style={{ color: "black", marginRight: '100px'}}>Good Hair Day</h1>
 
      </Navbar.Brand>
-          <Nav className="me-auto">
-          <Nav.Link href='/Packages' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black' }}>HOW IT WORKS</Nav.Link>
-          <Nav.Link href='/register' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black' }}>SIGN UP</Nav.Link>
-            <Nav.Link href='/login'>Login</Nav.Link>
-            <Nav.Link href="#pricing">Contact</Nav.Link>
+
+     <Nav className="me-auto" >
+          <Nav.Link href='/Packages' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>HOW IT WORKS</Nav.Link>
+          
+          <Nav.Link href='/register' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px'}}>SIGN UP</Nav.Link>
+
+            <Nav.Link href='/login'style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px'  }}>LOGIN</Nav.Link>
+
+            <Nav.Link href='/contact'style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>CONTACT</Nav.Link>
+
+            <Nav.Link href='/payments'style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>SUBSCRIBE</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

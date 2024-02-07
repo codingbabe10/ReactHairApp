@@ -13,8 +13,11 @@ import LandingPage from './pages/LandingPage'
 import Login from './components/forms/Login'
 import { Route, Routes } from 'react-router-dom'
 import Packages from './components/Packages'
-import Payment from './components/forms/payment'
+import Payments from './components/forms/payments'
 import HowItWorksPage from './pages/HowItWorksPage'
+import PaymentPage from './pages/PaymentPage'
+import SecondHome from './components/secondHome'; 
+import SecondHomePage from './pages/SecondHomePage'
 import React, { useState } from 'react';
 
 export default function App() {
@@ -37,8 +40,8 @@ export default function App() {
         <Route path='/users' element={<socialPage><Users/></socialPage>} />
         <Route path='/reviews' element={<socialPage><Reviews/></socialPage>} />
         <Route path='/packages' element={<HowItWorksPage></HowItWorksPage>} />
-        <Route path='/payment' element={<FormPage>Payment</FormPage>} />
-        <Route path='/secondHome' element={<FormPage>secondHome</FormPage>} />
+        <Route path='/payments' element={<PaymentPage />} />
+        <Route path='/secondHome' element={<SecondHomePage><secondHome /></SecondHomePage>} />
       </Routes>
 
     </Container>
