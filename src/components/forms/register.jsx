@@ -1,8 +1,14 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 
-export default function register() {
+import './register.css'
 
+
+
+export default function Register() {
+
+
+    
     
     const [user, setUser] = useState({ username: '', email: '', password: '' })
     const navigate = useNavigate();

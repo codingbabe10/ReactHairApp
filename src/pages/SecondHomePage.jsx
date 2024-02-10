@@ -1,8 +1,8 @@
 
-import secondHome from "../components/secondHome"; 
+import SecondHome from "../components/SecondHome"; 
 
 export default function SecondHomePage() { 
     return (
-        <secondHome />  
+        <SecondHome />  
     );
 }

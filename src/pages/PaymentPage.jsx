@@ -1,4 +1,4 @@
-import Payments from "../components/forms/payments.jsx";
+import Payments from "../components/forms/Payments.jsx";
 
 export default function PaymentPage() {
     return (

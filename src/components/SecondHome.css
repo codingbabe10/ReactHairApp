@@ -29,3 +29,25 @@ body, html {
     
   }
   
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .overlay h3 {
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  .overlay p {
+    margin-top: 10px;
+  }
+  
+

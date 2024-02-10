@@ -2,8 +2,12 @@ import { useState, useEffect } from "react";
 // import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-export default function Login() {
-    const [user, setUser] = useState({ username: '', password: '' });
+
+import './login.css';
+
+
+export default function Login({updateUser}) {
+const [user, setUser] = useState({})   
     const [isLogging, setIsLogging] = useState(false);
     const navigate = useNavigate();
     const secondHomeRoute = '/secondHome'; 
@@ -15,6 +19,7 @@ export default function Login() {
     }, [isLogging]);
 
     async function loginUser() {
+        console.log (user)
         try {
             const res = await fetch('http://127.0.0.1:5000/login', {
                 method: "POST",
@@ -23,10 +28,11 @@ export default function Login() {
             });
             if (res.ok) {
                 const data = await res.json();
-                console.log(data);
+                console.log(data, 'userData');
+                updateUser({...data, loggedIn: true})
 
                 // Navigate to home page after successful login
-                navigate('/secondHome');
+                navigate('/secondHome',{replace:true});
             } else {
                 // Handle login error
             }

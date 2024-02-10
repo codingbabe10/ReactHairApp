@@ -1,0 +1,56 @@
+.container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.container h3 {
+    text-align: center; /* Center align the "Login" heading */
+}
+
+.container form {
+    text-align: left; /* Align form elements to the left */
+}
+
+.container label {
+    display: block; /* Ensure labels are displayed as block elements */
+    margin-bottom: 5px; /* Add spacing below labels */
+}
+
+.container input[type="text"],
+.container input[type="password"] {
+    width: 100%; /* Make input fields fill the container width */
+    padding: 10px; /* Add padding to input fields */
+    margin-bottom: 15px; /* Add spacing between input fields */
+}
+
+.container input[type="submit"] {
+    width: 100%; /* Make submit button fill the container width */
+    padding: 10px; /* Add padding to submit button */
+    margin-top: 10px; /* Add spacing above submit button */
+}
+
+
+  
+
+
+  
+  .form-group {
+    margin-bottom: 15px; /* Add space between form elements */
+}
+
+.text-center {
+    text-align: center; /* Center align text within form elements */
+}
+
+.text-md-left {
+    text-align: left;
+}
+
+.btn-primary {
+    display: inline-block; /* Ensure button is inline with text */
+}
+
+  
