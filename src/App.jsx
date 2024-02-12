@@ -24,6 +24,8 @@ import SalonLocatorPage from './pages/SalonLocatorPage'
 import Contact from './components/forms/Contact'
 import ContactPage from './pages/ContactPage'
 import React, { useState } from 'react';
+import MakeAppointment from './components/MakeAppointment'
+import MakeAppointmentPage from '.pages/MakeAppointment'
 
 
 
@@ -67,6 +69,7 @@ function updateUser (user){
         <Route path='/secondHome' element={<SecondHomePage><secondHome /></SecondHomePage>} />
         <Route path='/salonlocator' element={<SalonLocatorPage></SalonLocatorPage>} />
         <Route path='/contact' element={<ContactPage />} />
+        <Route path='/makeappointment' element={<MakeAppointmentPage></MakeAppointmentPage>} />
       </Routes>
 
     </Container>

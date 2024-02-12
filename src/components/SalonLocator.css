@@ -1,0 +1,104 @@
+<iframe
+  width="600"
+  height="450"
+  style={{ border: '0' }}  // Convert style string to object
+  loading="lazy"
+  allowfullscreen
+  src="https://www.google.com/maps/embed/v1/search?q=...&key=..."
+></iframe>
+
+
+
+
+
+
+/* .map {
+    height: 100%;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+
+  /* mapStyle.css */
+
+/* .map {
+    feature-type: administrative;
+    element-type: all;
+    stylers: {
+      visibility: on;
+      lightness: 33;
+    }
+  } */ 
+  
+  /* .map {
+    feature-type: landscape;
+    element-type: all;
+    stylers: {
+      color: #f2e5d4;
+    }
+  }
+  
+  .map {
+    feature-type: poi.park;
+    element-type: geometry;
+    stylers: {
+      color: #c5dac6;
+    }
+  }
+  
+  .map {
+    feature-type: poi.park;
+    element-type: labels;
+    stylers: {
+      visibility: on;
+      lightness: 20;
+    }
+  }
+   */
+  /* .map {
+    feature-type: road;
+    element-type: all;
+    stylers: {
+      lightness: 20;
+    }
+  }
+  
+  .map {
+    feature-type: road.highway;
+    element-type: geometry;
+    stylers: {
+      color: #c5c6c6;
+    }
+  }
+  
+  .map {
+    feature-type: road.arterial;
+    element-type: geometry;
+    stylers: {
+      color: #e4d7c6;
+    }
+  } */
+  
+  /* .map {
+    feature-type: road.local;
+    element-type: geometry;
+    stylers: {
+      color: #fbfaf7;
+    }
+  }
+  
+  .map {
+    feature-type: water;
+    element-type: all;
+    stylers: {
+      visibility: on;
+      color: #acbcc9;
+    }
+  } */
+  

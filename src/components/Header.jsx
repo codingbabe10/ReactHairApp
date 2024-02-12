@@ -29,6 +29,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useState } from 'react'; // Import useState hook
+import {NavLink} from 'react-router-dom'
 
 import './header.css';
 
@@ -48,11 +49,11 @@ function FirstHeader({isLoggedIn}) {
             <h1 className='gotham-bold' style={{ color: "black", marginRight: '100px'}}>Good Hair Day</h1>
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href='/Packages' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>HOW IT WORKS</Nav.Link>
-            <Nav.Link href='/register' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px'}}>SIGN UP</Nav.Link>
-            <Nav.Link href='/login' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>LOGIN</Nav.Link>
-            <Nav.Link href='/Contact' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>CONTACT</Nav.Link>
-            <Nav.Link href='/payments' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>SUBSCRIBE</Nav.Link>
+            <Nav.Link as={NavLink} to='/Packages' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>HOW IT WORKS</Nav.Link>
+            <Nav.Link as={NavLink} to='/register' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px'}}>SIGN UP</Nav.Link>
+            <Nav.Link as={NavLink} to='/login' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>LOGIN</Nav.Link>
+            <Nav.Link as={NavLink}to='/Contact' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>CONTACT</Nav.Link>
+            <Nav.Link as={NavLink} to='/payments' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>SUBSCRIBE</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
@@ -71,11 +72,11 @@ function SecondHeader() {
             <h1 className='gotham-bold' style={{ color: "black", marginRight: '100px'}}>Good Hair Day</h1>
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href='/SalonLocator' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>STORE LOCATOR</Nav.Link>
-            <Nav.Link href='/' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px'}}>MAKE APPOINTMENT</Nav.Link>
-            <Nav.Link href='/' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>REVIEWS</Nav.Link>
-            <Nav.Link href='/Contact' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>CONTACT</Nav.Link>
-            <Nav.Link href='/Payments' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>UPDATE SUBSCRIPTION</Nav.Link>
+            <Nav.Link as={NavLink} to='/SalonLocator' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>STORE LOCATOR</Nav.Link>
+            <Nav.Link as={NavLink} to='/' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px'}}>MAKE APPOINTMENT</Nav.Link>
+            <Nav.Link as={NavLink} to='/' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>REVIEWS</Nav.Link>
+            <Nav.Link as={NavLink} to='/Contact' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>CONTACT</Nav.Link>
+            <Nav.Link as={NavLink} to='/Payments' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>UPDATE SUBSCRIPTION</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
