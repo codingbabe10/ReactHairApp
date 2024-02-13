@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Review from "./SingleReview"
-
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 export const Reviews = () => {
    const [reviews, setReviews] = useState ([
@@ -28,13 +29,26 @@ export const Reviews = () => {
 			"timestamp": "2024-01-03T00:54:50.843257",
 			"user_id": "1"
 		}
-	])
+	]);
     
-     
+	const handleRemoveReview = (id) => {
+		// Implement the logic to remove the review with the given id
+	  };
+	
+	  // Function to handle adding a new review
+	  const handleAddReview = (newReview) => {
+		// Implement the logic to add the new review to the reviews state
+	  };
+	
+	  // Function to handle search
+	  const handleSearch = (searchTerm) => {
+		// Implement the logic to filter reviews based on the search term
+	  };
 
 
   
 return (
+	
     <div>
       {reviews.length > 0 ? (
         reviews.map((review) => (
@@ -54,3 +68,19 @@ return (
   );
 }
 
+
+	<div className="Packages">
+        <h1> Curious about alon? Want to share how your experience was with others? Type the name of the salon into the box below, and read or write a review!</h1>
+        
+
+
+<Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+            />
+            <Button variant="outline-success">Search</Button>
+          </Form>
+</div>

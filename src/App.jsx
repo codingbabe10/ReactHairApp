@@ -25,7 +25,9 @@ import Contact from './components/forms/Contact'
 import ContactPage from './pages/ContactPage'
 import React, { useState } from 'react';
 import MakeAppointment from './components/MakeAppointment'
-import MakeAppointmentPage from '.pages/MakeAppointment'
+import MakeAppointmentPage from './pages/MakeAppointmentPage'
+import SearchAppointment from './components/SearchAppointment'
+import SearchAppointmentPage from './pages/SearchAppointmentPage'
 
 
 
@@ -39,6 +41,7 @@ import MakeAppointmentPage from '.pages/MakeAppointment'
 export default function App() {
   const [selectedPackagePrice, setSelectedPackagePrice] = useState(null);
   const [user, setUser] = useState({ username: '', password: '' });
+  const [cart, setCart] = useState ([])
 
   const handlePackageSelect = (price) => {
     setSelectedPackagePrice(price);
@@ -50,7 +53,7 @@ function updateUser (user){
   
 }
 
-
+//{title: '', price: 0, desc: ''}
 
 
 
@@ -70,6 +73,7 @@ function updateUser (user){
         <Route path='/salonlocator' element={<SalonLocatorPage></SalonLocatorPage>} />
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/makeappointment' element={<MakeAppointmentPage></MakeAppointmentPage>} />
+        <Route path='/searchappointment' element={<SearchAppointmentPage></SearchAppointmentPage>} />
       </Routes>
 
     </Container>

@@ -1,28 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import { useEffect } from 'react';
-import SecondHeader from './SecondHeader';
-import ErrorBoundary from './ErrorBoundary';
-import Dashboard from './dashboard.jsx';
-import Events from './events.jsx';
-import EventType from './eventType';
-import Invitee from './invitee.jsx';
-import { BrowserRouter } from 'react-router-dom';
-import { RequireAuth, AuthProvider } from './auth.jsx';
-import { Routes, Route } from 'react-router-dom';
-import { createRoot } from 'react-dom/client';
-import Event from './event.jsx';
-import EventTypeAvailTimes from './eventTypeAvailTimes.jsx';
-import UserBusyTimes from "./userBusyTimes";
 import { useParams} from 'react-router-dom';
-import Popup from './popup';
-import Select from 'react-select';
-import { useRef } from 'react';
-import DatePicker from 'react-datepicker';
+
+// import Select from 'react-select';
 
 
 
@@ -42,7 +23,13 @@ const MakeAppointment = () => {
     const [user, setUser] = useState(null);
     const [reasonInput, setReasonInput] = useState('');
     const [popupOpen, setPopupOpen] = useState(false);
-    
+    const [eventTypesSlots, seEventTypesSlots] = useState([]);
+
+
+
+    // Define eventTypes
+    const eventTypes = ['type1', 'type2', 'type3'];
+
 
     const { uuid } = useParams(); // Import useParams from 'react-router-dom'
 
@@ -221,12 +208,12 @@ const MakeAppointment = () => {
                     </Link>
                 </div>
                 <div style={{ alignSelf: 'center', textAlign: 'center' }}>
-                    <Select
+                    {/* <Select
                         defaultValue={selectedOption}
                         options={options}
                         placeholder="Choose Filter"
                         onChange={(event) => handleSelectedOptionChange(event.value)}
-                    />
+                    /> */}
                 </div>
                 <div className="row">
                     <table className="striped centered">

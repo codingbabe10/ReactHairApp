@@ -72,8 +72,8 @@ function SecondHeader() {
             <h1 className='gotham-bold' style={{ color: "black", marginRight: '100px'}}>Good Hair Day</h1>
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link as={NavLink} to='/SalonLocator' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>STORE LOCATOR</Nav.Link>
-            <Nav.Link as={NavLink} to='/' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px'}}>MAKE APPOINTMENT</Nav.Link>
+            <Nav.Link as={NavLink} to='/SalonLocator' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>SALON LOCATOR</Nav.Link>
+            <Nav.Link as={NavLink} to='/SearchAppointment' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px'}}>MAKE APPOINTMENT</Nav.Link>
             <Nav.Link as={NavLink} to='/' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>REVIEWS</Nav.Link>
             <Nav.Link as={NavLink} to='/Contact' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>CONTACT</Nav.Link>
             <Nav.Link as={NavLink} to='/Payments' style={{ fontFamily: 'Cormorant Garamond, serif', color: 'black', marginRight: '50px' }}>UPDATE SUBSCRIPTION</Nav.Link>
