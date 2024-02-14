@@ -22,6 +22,7 @@
 
 
 
+
 .card::before {
   content: ''; /* Required for pseudo-elements */
   position: absolute;
@@ -55,6 +56,17 @@
   transform: translateY(-5px); /* Move the card slightly up on hover */
   box-shadow: 0 4px 8px rgba(142, 171, 206, 0); /* Add shadow effect on hover */
 }
+
+
+
+
+
+.selected-package {
+  background-color: #f0f0f0; /* Change to the desired color */
+}
+
+
+
 
 
 

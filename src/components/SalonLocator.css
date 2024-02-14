@@ -12,7 +12,7 @@
 
 
 
-/* .map {
+/.map {
     height: 100%;
   }
   
@@ -25,18 +25,18 @@
   
 
 
-  /* mapStyle.css */
+ mapStyle.css 
 
-/* .map {
+.map {
     feature-type: administrative;
     element-type: all;
     stylers: {
       visibility: on;
       lightness: 33;
     }
-  } */ 
+  } 
   
-  /* .map {
+   .map {
     feature-type: landscape;
     element-type: all;
     stylers: {
@@ -60,8 +60,7 @@
       lightness: 20;
     }
   }
-   */
-  /* .map {
+    .map {
     feature-type: road;
     element-type: all;
     stylers: {
@@ -83,9 +82,9 @@
     stylers: {
       color: #e4d7c6;
     }
-  } */
+  } 
   
-  /* .map {
+  .map {
     feature-type: road.local;
     element-type: geometry;
     stylers: {
@@ -93,12 +92,12 @@
     }
   }
   
-  .map {
+   .map {
     feature-type: water;
     element-type: all;
     stylers: {
       visibility: on;
       color: #acbcc9;
     }
-  } */
-  
+  } 
+   

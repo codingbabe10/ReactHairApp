@@ -41,6 +41,8 @@ export default function Register() {
 
     return (
         <>
+
+        
             <h3>Create Account</h3>
             <form action="" onSubmit={handleSubmit}>
                 <label htmlFor="username">New Username</label><br />

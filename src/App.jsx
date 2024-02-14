@@ -38,14 +38,24 @@ import SearchAppointmentPage from './pages/SearchAppointmentPage'
 
 
 
+
 export default function App() {
-  const [selectedPackagePrice, setSelectedPackagePrice] = useState(null);
+  const [selectedPackage, setSelectedPackage] = useState(null);
   const [user, setUser] = useState({ username: '', password: '' });
   const [cart, setCart] = useState ([])
 
-  const handlePackageSelect = (price) => {
-    setSelectedPackagePrice(price);
+  const handlePackageSelect = (selectedpackage) => {
+    setSelectedPackage(selectedpackage);
   };
+
+
+
+//   const packages = [
+// {name: 'Style Package', price: 360},
+// {name: 'Haircut Package', price: 480},
+// {name: 'Haircolor Package', price: 780}
+
+//   ];
 
 function updateUser (user){
 
@@ -78,4 +88,5 @@ function updateUser (user){
 
     </Container>
   );
-}
+
+  }

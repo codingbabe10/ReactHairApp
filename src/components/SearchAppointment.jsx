@@ -33,12 +33,16 @@ function SearchAppointment () {
 
   return (
     <div>
+
+<div style={{ background: 'linear-gradient(to bottom right, #e0f3ff, #b5f3ff)', minHeight: '100vh', padding: '20px' }}></div>
+        
       <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', color: 'white', zIndex: 1 }}>
-        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', color: 'black' }}>SCHEDULE YOUR APPOINTMENT</h1>
+      
+        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', color: 'black' }}>Look Up Your Stylist or Salon in the Store Locator or Connect With Our Concierge Team Who Can Make Your Appointment For You.  At Good Hair Day We Make Scheduling Easy.</h1>
         <h5 style={{ fontSize: '1rem', fontWeight: 'bold', color: 'black' }}>Our scheduling team is here to help you schedule your appointment</h5>
-        <Card style={{ width: '300px', margin: '5px auto', backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '5px' }}>
+        <Card style={{ width: '350px', margin: '5px auto', backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '5px' }}>
           <Card.Body>
-            <Card.Title style={{ color: 'white', textAlign: 'center' }}>Email us at: Support@GoodHairDay.App or Call us at (805)757-7506</Card.Title>
+            <Card.Title style={{ color: 'white', textAlign: 'center' }}> Schedule@GoodHairDay.App (805)757-7506</Card.Title>
             {/* <Link to="/packages" className="btn btn-custom" style={{ backgroundColor: 'gray', bordercolor: 'red' }}>Explore Packages</Link> */}
           </Card.Body>
         </Card>
@@ -60,15 +64,13 @@ function SearchAppointment () {
             </div>
             <div className="col-md-6">
               <div>
-                <div className="search-2">
-                  <i className='bx bxs-map'></i>
-                  <input type="text" placeholder="Enter location" />
+                
                   <button onClick={handleSearch}>Search</button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+
   
         {/* Display search results */}
         <div className="search-results">

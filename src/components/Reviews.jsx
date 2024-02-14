@@ -58,7 +58,19 @@ return (
               <button onClick={() => handleRemoveReview(review.id)}>
                 Remove Review
               </button>
+			
             </div>
+
+			<div class="container height-100 d-flex align-items-center justify-content-center">
+    
+    <div class="form-floating w-100">
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+  <label for="floatingTextarea2">Comments</label>
+</div>
+    
+</div>
+
+
           </div>
         ))
       ) : (

@@ -1,4 +1,4 @@
-.container {
+custom.container {
     border: 1px solid #ccc; /* Add border around the container */
     padding: 20px; /* Add padding inside the container */
     width: 80%; /* Set the width of the container */
@@ -11,7 +11,7 @@
 }
 
 .container form {
-    text-align: left; /* Align form elements to the left */
+    text-align: right; /* Align form elements to the left */
 }
 
 .container label {
