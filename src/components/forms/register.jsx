@@ -42,7 +42,7 @@ export default function Register() {
     return (
         <>
 
-        
+<container>
             <h3>Create Account</h3>
             <form action="" onSubmit={handleSubmit}>
                 <label htmlFor="username">New Username</label><br />
@@ -53,5 +53,6 @@ export default function Register() {
                 <input type="create password" name='create password' value={user.password} onChange={(e)=> setUser({...user, password: e.target.value})} required/><br />
                 <input type="Submit" value={'Register'}/>
             </form>
+            </container>
         </>
     )}

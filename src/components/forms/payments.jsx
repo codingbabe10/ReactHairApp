@@ -71,12 +71,12 @@ function PymntForm() {
                 <option value="40">Haircut $40 per month</option>
                 <option value="65">Haircolor $65 per month</option>
                 <option value="80">Highlights $80 per month</option>
-                <option value="5">Bayalage $100 per month</option>
-                <option value="6">Haircut and Color $100 per month</option>
-                <option value="7">Haircut and Highlights $115 per month</option>
-                <option value="8">Haircut and Bayalage $120 per month</option>
-                <option value="9">Hair Extensions $200 per month</option>
-                <option value="10">Haircut, Highlights, Bayalage, Color, and Extensions $300 per month</option>
+                <option value="100">Bayalage $100 per month</option>
+                <option value="100">Haircut and Color $100 per month</option>
+                <option value="115">Haircut and Highlights $115 per month</option>
+                <option value="120">Haircut and Bayalage $120 per month</option>
+                <option value="200">Hair Extensions $200 per month</option>
+                <option value="500">Haircut, Highlights, Bayalage, Color, and Extensions $500 per month</option>
                 {/* Add more options as needed */}
               </select>
             </div>
