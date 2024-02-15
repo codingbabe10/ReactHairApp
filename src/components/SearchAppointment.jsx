@@ -38,7 +38,7 @@ function SearchAppointment () {
         
       <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', color: 'white', zIndex: 1 }}>
       
-        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', color: 'black' }}>Look Up Your Stylist or Salon in the Store Locator or Connect With Our Concierge Team Who Can Make Your Appointment For You.  At Good Hair Day We Make Scheduling Easy.</h1>
+        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', color: 'black' }}> Contact Our Scheduling Team To Make Your Appointment.  At Good Hair Day We Make Scheduling Easy.</h1>
         <h5 style={{ fontSize: '1rem', fontWeight: 'bold', color: 'black' }}>Our scheduling team is here to help you schedule your appointment</h5>
         <Card style={{ width: '350px', margin: '5px auto', backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '5px' }}>
           <Card.Body>

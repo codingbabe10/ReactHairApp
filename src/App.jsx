@@ -54,6 +54,15 @@ export default function App() {
 // {name: 'Style Package', price: 360},
 // {name: 'Haircut Package', price: 480},
 // {name: 'Haircolor Package', price: 780}
+// {name: 'Highlights Package', price: 960},
+// {name: 'Bayalage Package', price: 1200},
+// {name: 'Haircut and Hair Color Package', price: 1200}
+// {name: 'Haircolor Package', price: 1380}
+// {name: 'Highlights Package', price: 1440},
+// {name: 'Bayalage Package', price: 2400},
+// {name: 'Haircut and Hair Color Package', price: 3000}
+
+
 
 //   ];
 

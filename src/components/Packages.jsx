@@ -37,8 +37,16 @@ import './Packages.css'
   }
   
 
+  function toggleDescription() {
+    var description = document.getElementById("description");
+    if (description.style.display === "none") {
+        description.style.display = "block";
+    } else {
+        description.style.display = "none";
+    }
 
-
+  
+  }
 
 
 
@@ -46,24 +54,26 @@ import './Packages.css'
   
   return (
 
+
+<div className="container" style={{ margin: '100', maxWidth: '1500px' }}>
   <div className="Packages">
   <h1>Step 1: Pick Your package or packages.</h1>
   
   <h5></h5>
   <div className="row">
-    <div className="col-md-4">
+    <div className="col-md-4 mb-3">
       <div className="card package-item">
         <div className="card-body">
           <h5 className="card-title">Style</h5>
           <p className="card-text">$30 a month</p>
           <div className="button-container"></div>
-          <button className="btn btn-pink description-btn">Description</button>
+          <button className="btn btn-pink description-btn" onClick={toggleDescription}>Description</button>
           <button className="btn btn-pink select-btn">Select</button>
           <p className="description" style={{ display: 'none' }}>Description: Go to the salon and get your hair styled in any way that you want on a monthly basis. You can get an up-do done, a Brazilian blow-out, or luscious curls, any style that you fancy. If you would like your hair styled every time you go to the salon along with any other package you select, you can get this package too so that you always leave the salon with your hair styled along with your hair service of choice.</p>
         </div>
       </div>
     </div>
-    <div className="col-md-4">
+    <div className="col-md-4 mb-3">
       <div className="card package-item">
         <div className="card-body">
           <h5 className="card-title">Haircut</h5>
@@ -75,7 +85,7 @@ import './Packages.css'
           </div>
         </div>
         </div>
-      <div className="col-md-4">
+      <div className="col-md-4 mb-3">
         <div className="card package-item">
           <div className="card-body">
              <h5 className="card-title">Haircolor</h5>
@@ -86,7 +96,7 @@ import './Packages.css'
             </div>
         </div>
     </div>
-       <div className="col-md-4">
+       <div className="col-md-4 mb-3">
             <div className="card package-item">
                 <div className="card-body">
                     <h5 className="card-title">Highlights</h5>
@@ -94,10 +104,13 @@ import './Packages.css'
                     <button className="btn btn-pink description-btn">Description</button>
                    <button className="btn btn-pink select-btn">Select</button>
                    <p className="description" style={{ display: 'none' }}>Description: Our professional haircut service includes a consultation, shampoo, haircut, and styling to suit your preferences.</p>
+                   
                    </div>
+                   
                   </div>
+                  
                </div>
-                   <div className="col-md-4">
+                   <div className="col-md-4 mb-3">
                        <div className="card package-item">
                            <div className="card-body">
                                <h5 className="card-title">Bayalage</h5>
@@ -108,7 +121,7 @@ import './Packages.css'
                                 </div>
                        </div>
                    </div>
-                       <div className="col-md-4">
+                       <div className="col-md-4 mb-3">
                            <div className="card package-item">
                                <div className="card-body">
                                    <h5 className="card-title">Haircut and Haircolor</h5>
@@ -119,7 +132,7 @@ import './Packages.css'
                    </div>
                            </div>
                        </div>
-                           <div className="col-md-4">
+                           <div className="col-md-4 mb-3">
                                <div className="card package-item">
                                    <div className="card-body">
                                       <h5 className="card-title">Haircut and Highlights</h5>
@@ -130,7 +143,7 @@ import './Packages.css'
                    </div>
                                </div>
                            </div>
-                               <div className="col-md-4">
+                               <div className="col-md-4 mb-3">
                                    <div className="card package-item">
                                        <div className="card-body">
                                            <h5 className="card-title">Haircut and Bayalage</h5>
@@ -141,7 +154,7 @@ import './Packages.css'
                    </div>
                           </div>
                                </div>
-                                   <div className="col-md-4">
+                                   <div className="col-md-4 mb-3">
                                        <div className="card package-item">
                                            <div className="card-body">
                                                <h5 className="card-title">Hair Extenstions</h5>
@@ -152,7 +165,7 @@ import './Packages.css'
                    </div>
                         </div>
                               </div>
-                                  <div className="col-md-4">
+                                  <div className="col-md-4 mb-3">
                                           <div className="card package-item">
                                                <div className="card-body">
                                                    <h5 className="card-title">Haircut, Color, Extensions</h5>
@@ -174,9 +187,11 @@ import './Packages.css'
             </div>
         </div>
       </div>
+      </div>
 
 
   );
             }
-
+          
+          
       

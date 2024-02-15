@@ -42,4 +42,20 @@
       }
       
 
+
+      @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body{
+	background: #E9ECF3;
+	font-family: 'Rubik', sans-serif;
+}
+.card{
+	width: 375px;
+	border: none;
+	border-radius: 10px;
+	margin-top: 20%;
+}
+span{
+	font-size: 14px;
+}
     

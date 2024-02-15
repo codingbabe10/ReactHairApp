@@ -28,30 +28,62 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
+import {useEffect} from 'react'
+
+
+import './payment.css'
+
+
+
+
+
+
 
 function PymntForm() {
-  const [validated, setValidated] = useState(false);
+  const [selectedAmount, setSelectedAmount] = useState(0);
 
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-
-    setValidated(true);
+  const handlePackageChange = (event) => {
+    const amount = parseInt(event.target.value);
+    setSelectedPackage(amount);
   };
+
+
+
+
+
 
   return (
     <>
-   
-  
-   
     <section>
-      <div class="row">
+    <div class="container">
+      <div class="row justify-content-center align-items-start">
+        <div class="col-md-8 offset-md- mb-4">
         <div class="col-md-8 mb-4">
-          <div class="card mb-4">
+          <div class="card mb-4 h-100">
             <div class="card-header py-3">
+              <h5 class="mb-0">Package Selection</h5>
+            </div>
+            <div class="card-body">
+              {/* Add your drop-down menu for package selection here */}
+              <select id="packageSelect" className="form-select" onChange={handlePackageChange}>
+                <option selected>Select a package</option>
+                <option value="30">Style $30 per month</option>
+                <option value="40">Haircut $40 per month</option>
+                <option value="65">Haircolor $65 per month</option>
+                <option value="80">Highlights $80 per month</option>
+                <option value="5">Bayalage $100 per month</option>
+                <option value="6">Haircut and Color $100 per month</option>
+                <option value="7">Haircut and Highlights $115 per month</option>
+                <option value="8">Haircut and Bayalage $120 per month</option>
+                <option value="9">Hair Extensions $200 per month</option>
+                <option value="10">Haircut, Highlights, Bayalage, Color, and Extensions $300 per month</option>
+                {/* Add more options as needed */}
+              </select>
+            </div>
+          </div>
+         
+          <div class="card mb-4 h-100">
+            <div class="card-header py">
               <h5 class="mb-0">Billing details</h5>
             </div>
             <div class="card-body">
@@ -71,11 +103,18 @@ function PymntForm() {
                     </div>
                   </div>
                 </div>
+                
+    
+                
+                <div class="form-outline mb-4">
+                  <input type="text" id="form6Example3" class="form-control" />
+                  <label class="form-label" for="form6Example3">Address</label>
+                </div>
     
                 
                 <div class="form-outline mb-4">
                   <input type="text" id="form6Example4" class="form-control" />
-                  <label class="form-label" for="form6Example4">Address</label>
+                  <label class="form-label" for="form6Example4">Phone Number</label>
                 </div>
     
                 
@@ -87,7 +126,7 @@ function PymntForm() {
                 
                 <div class="form-outline mb-4">
                   <input type="number" id="form6Example6" class="form-control" />
-                  <label class="form-label" for="form6Example6">Phone</label>
+                  <label class="form-label" for="form6Example6">Message (Optional)</label>
                 </div>
     
                 <hr class="my-4" />
@@ -170,18 +209,21 @@ function PymntForm() {
           </div>
         </div>
     
-        <div class="col-md-4 mb-4">
-          <div class="card mb-4">
-            <div class="card-header py-3">
+        <div class="col-md-6 mb-4">
+          <div class="card mb-0 h-100">
+            <div class="card-header py">
               <h5 class="mb-0">Summary</h5>
             </div>
             <div class="card-body">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                   Products
-                  <span>$53.98</span>
+                  <span>$0.00</span>
                 </li>
-              
+                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                  
+                  <span></span>
+                </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                   <div>
                     <strong>Total amount</strong>
@@ -189,15 +231,39 @@ function PymntForm() {
                       <p class="mb-0"></p>
                     </strong>
                   </div>
-                  <span><strong>$53.98</strong></span>
+                  <span><strong>${selectedAmount.toFixed(2)}</strong></span>
+
                 </li>
               </ul>
+              </div>
+              </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
-   
+    <div class="container">
+    <div class="row align-items-start">
+      <div class="col-md-10 mb-8" h-100>
+       
+      <div class="row">
+       
+        <div class="col">
+          
+        </div>
+       
+        <div class="col"></div>
+      <div class="col-md-10 mb-8">
+        
+        <div class="container">
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+      </div>
+  
   
     </>
   
