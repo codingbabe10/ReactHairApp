@@ -83,7 +83,7 @@ function updateUser (user){
       <Routes>
         <Route path='/' element={<LandingPage />} />
         <Route path='/login' element={<FormPage><Login user={user} updateUser= {updateUser} /></FormPage>} />
-        <Route path='/register' element={<formPage><Register/></formPage>} />
+        <Route path='/register' element={<FormPage><Register/></FormPage>} />
         <Route path='/users' element={<socialPage><Users/></socialPage>} />
         <Route path='/reviews' element={<socialPage><Reviews/></socialPage>} />
         <Route path='/packages' element={<HowItWorksPage></HowItWorksPage>} />

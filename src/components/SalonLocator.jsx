@@ -15,6 +15,7 @@ import ErrorBoundary from './ErrorBoundary';
 import './SalonLocator.css'
 
 const SalonLocator = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     const script = document.createElement('script');
     script.type = 'text/javascript'; // corrected type
@@ -28,7 +29,7 @@ const SalonLocator = () => {
     return (
       <div id='storerocket-widget' style={{width: '100%'}} data-storerocket-env='p' data-storerocket-id='5Z4wZlzpPd'>
         <p style={{textAlign: 'center', fontSize: '13px', padding: '10px'}}>
-          
+
            {/* <a target='_blank' href='https://storerocket.io' style={{fontSize: '13px'}}>Store Locator App</a>.. */}
            </p>
       </div>

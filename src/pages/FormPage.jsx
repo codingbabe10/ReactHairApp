@@ -1,9 +1,11 @@
 import React from 'react'
 
+import './FormPage.css'
+
 export default function FormPage({ children}) {
   return (
-    <body sidebar={false}>
+    <div className='center'>
         {children}
-    </body>
+    </div>
   )
 }
